@@ -1,0 +1,6 @@
+.vertical-separator {
+    display: inline-block;
+    height: 100%;
+    width: 2px;
+    background-color: var(--color-dark);
+}

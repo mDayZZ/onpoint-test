@@ -1,0 +1,10 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    padding-block: 30px;
+    padding-inline: 140px;
+}
+
+.footer__inner {
+
+}

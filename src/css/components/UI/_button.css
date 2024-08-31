@@ -1,0 +1,18 @@
+.button {
+    max-width: 580px;
+    max-height: 160px;
+    background-color: var(--color-pink);
+    padding-block: 24px;
+    padding-inline: 30px;
+    border-radius: 80px;
+
+    &__icon {
+
+    }
+
+    &__text {
+        color: var(--color-dark);
+        font-family: var(--font-family-base);
+        font-size: 54px;
+    }
+}

@@ -1,0 +1,22 @@
+.hero {
+    &__info {
+
+    }
+
+    &__info-text {
+        font-family: var(--font-family-accent);
+        font-weight: 300;
+        line-height: 1.07;
+        font-size: 220px;
+
+        &--accent {
+            font-weight: 800;
+        }
+    }
+
+    &__info-container {
+        display: flex;
+        gap: 80px;
+        align-items: center;
+    }
+}
