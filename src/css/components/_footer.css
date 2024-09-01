@@ -3,6 +3,12 @@
     bottom: 0;
     padding-block: 30px;
     padding-inline: 140px;
+
+    &__icon {
+        width: clamp(60px, 5.5vw, 113px);
+        height: auto;
+
+    }
 }
 
 .footer__inner {

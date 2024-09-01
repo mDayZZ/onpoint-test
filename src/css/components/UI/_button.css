@@ -10,10 +10,16 @@
     padding-inline: 30px;
     border-radius: 80px;
 
+
     &__round {
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: var(--color-dark);
         width: 100px;
+        width: clamp(30px, 4.88vw, 100px);
+        padding: 10px;
         aspect-ratio: 1;
         border-radius: 50%;
         box-shadow: inset 2px 2px 10px 0px rgba(0, 0, 0, .2),
@@ -21,17 +27,30 @@
          2px 2px 4px 5px rgba(255, 255, 255, .4);
     }
     &__icon {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        width: auto;
+        max-width: 100%;
+
+        /*position: absolute;*/
+        /*top: 50%;*/
+        /*left: 50%;*/
+        /*transform: translate(-50%, -50%);*/
     }
 
     &__text {
         color: var(--color-dark);
         font-family: var(--font-family-base);
-        font-size: 54px;
+        font-size: clamp(16px, 2.5vw, 54px);
+        /*text-wrap: nowrap;*/
     }
 }
 
+.button:hover {
+    background-color: var(--color-pink-light);
+}
+
+/*@media (max-width: 892px) {*/
+/*    .button {*/
+/*        gap: 25px;*/
+/*    }*/
+/*}*/
 

@@ -1,5 +1,5 @@
 {
-  "name": "html5-postcss-webpack",
+  "name": "onpoint-test-task",
   "version": "1.0.0",
   "description": "",
   "main": "src/js/script.js",
@@ -21,6 +21,7 @@
     "postcss-custom-properties": "^14.0.1",
     "postcss-import": "^16.1.0",
     "postcss-loader": "^7.0.1",
+    "postcss-mixins": "^10.0.1",
     "postcss-nested": "^6.2.0",
     "postcss-preset-env": "^7.7.2",
     "style-loader": "^3.3.1",

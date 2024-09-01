@@ -14,6 +14,10 @@ body {
 
 }
 
+body * {
+    transition-duration: 0.2s;
+}
+
 
 
 
@@ -36,7 +40,25 @@ body {
 .section-title {
     font-family: var(--font-family-base);
     font-weight: 400px;
-    font-size: 54px;
+    /*font-size: 54px;*/
+    font-size: clamp(16px, 2.64vw, 54px);
+}
+
+.large-text {
+    font-family: var(--font-family-accent);
+    font-weight: 300;
+    line-height: 1.07;
+    /*font-size: 220px;*/
+    font-size: clamp(65px, 10.7vw, 220px);
+    /*font-size: 10.5vw;*/
+
+    &--accent {
+        font-weight: 800;
+    }
+}
+
+.adaptive-size {
+
 }
 
 .container {

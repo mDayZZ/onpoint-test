@@ -38,6 +38,8 @@ module.exports = {
                   require('postcss-import'),
                   require('postcss-nested'),
                   require('postcss-custom-properties'),
+                  require('postcss-simple-vars'),
+                  require('postcss-mixins'),
                 ],
               },
             },

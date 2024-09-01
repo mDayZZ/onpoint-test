@@ -1,22 +1,106 @@
 .hero {
+    position: relative;
+    background:
+            url('/src/images/hero_background_layer.png') no-repeat,
+            radial-gradient(circle at top left, var(--color-blue-light) 5%, transparent 30%) no-repeat,
+            radial-gradient(circle at bottom right, var(--color-blue-light) 5%, transparent 25%) no-repeat;
+    background-color: white;
+    overflow: hidden;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 10%;
+        left: 70%;
+        background: url("/src/images/bacti_4.png") no-repeat;
+        background-size: contain;
+        width: clamp(37px, 6.1vw, 125px);
+        aspect-ratio: 1;
+        animation-delay: 1s;
+        transform-origin: 20px 40px;
+        animation: rotate-right 90s linear infinite;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 90%;
+        left: 70%;
+        background: url("/src/images/bakti_2.png") no-repeat;
+        background-size: contain;
+        /*width: 450px;*/
+        width: clamp(133px, 22vw, 450px);
+        aspect-ratio: 1;
+        animation: slide-left 60s ease-in-out infinite;
+        pointer-events: none;
+
+
+    }
+
     &__info {
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            background: url("/src/images/bakti_1.png") no-repeat;
+            background-size: contain;
+            /*width: 146px;*/
+            width: clamp(43px, 7.12vw, 146px);
+            aspect-ratio: 1;
+            top: 100%;
+            right: 100%;
+            transform-origin: 120px 90px;
+            animation: rotate-right 100s linear infinite;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            background: url("/src/images/bacti_3.png") no-repeat;
+            background-size: contain;
+            /*width: 220px;*/
+            width: clamp(65px, 10.74vw, 220px);
+            aspect-ratio: 1;
+            top: 0;
+            right: 0;
+            transform-origin: 150px 100px;
+            animation: rotate-right 120s linear infinite;
+        }
 
     }
 
     &__info-text {
-        font-family: var(--font-family-accent);
-        font-weight: 300;
-        line-height: 1.07;
-        font-size: 220px;
+        /*font-family: var(--font-family-accent);*/
+        /*font-weight: 300;*/
+        /*line-height: 1.07;*/
+        /*font-size: 220px;*/
 
         &--accent {
-            font-weight: 800;
+            position: relative;
+
+        }
+
+        &--accent:after {
+            content: '';
+            /*width: 1183px;*/
+            width: clamp(350px, 57.7vw, 1183px);
+            aspect-ratio: 6.5;
+            position: absolute;
+            bottom: 60%;
+            left: 90%;
+            background-image: url("/src/images/pink_sperm_1.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+
+
         }
     }
 
     &__info-container {
         display: flex;
-        gap: 80px;
+        /*gap: 80px;*/
+        justify-content: space-between;
+        flex-wrap: wrap;
         align-items: center;
     }
 }

@@ -1,0 +1,41 @@
+@keyframes rotate-right {
+    from {
+        transform: rotate(0deg) scale(90%);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(120%);
+    }
+    to {
+        transform: rotate(359deg) scale(90%);
+    }
+}
+@keyframes rotate-left {
+    from {
+        transform: rotate(0deg) scale(90%);
+    }
+
+    50% {
+        transform: scale(120%);
+    }
+
+    to {
+        transform: rotate(-359deg) scale(90%);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translate(0, 0) scale(90%);
+    }
+
+    50% {
+        transform: scale(105%) translate(-200px, -200px);
+    }
+
+    100% {
+        transform: scale(90%) translate(0px, 0px);
+    }
+}
+
+

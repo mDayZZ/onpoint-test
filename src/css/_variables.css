@@ -1,10 +1,12 @@
 :root {
     --color-dark: #272727;
+    --color-dark-light: #373737;
     --color-pink: #ff6699;
+    --color-pink-light: #ff75a1;
     --color-blue: #1f88cb;
+    --color-blue-light: #3fc2fd;
 
     --font-family-base: 'DINPro', serif;
     --font-family-accent: 'Gilroy', serif;
-    --font-family-content: 'Myriad Pro', serif;
     --font-family-util: 'Circe', serif;
 }
