@@ -71,12 +71,13 @@
 
     &__info-text {
         /*font-family: var(--font-family-accent);*/
-        /*font-weight: 300;*/
+        font-weight: 300;
         /*line-height: 1.07;*/
         /*font-size: 220px;*/
 
         &--accent {
             position: relative;
+            font-weight: 800;
 
         }
 

@@ -46,7 +46,7 @@ body * {
 
 .large-text {
     font-family: var(--font-family-accent);
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.07;
     /*font-size: 220px;*/
     font-size: clamp(65px, 10.7vw, 220px);
@@ -57,9 +57,6 @@ body * {
     }
 }
 
-.adaptive-size {
-
-}
 
 .container {
     outline: 2px solid yellow;

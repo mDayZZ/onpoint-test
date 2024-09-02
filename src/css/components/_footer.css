@@ -1,5 +1,6 @@
 .footer {
     position: fixed;
+    z-index: 10000;
     bottom: 0;
     padding-block: 30px;
     padding-inline: 140px;
