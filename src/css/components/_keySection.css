@@ -111,11 +111,15 @@
 #infoBlock_2 {
     position: relative;
     /*max-width: 300px;*/
-    white-space: pre-line;
     text-wrap: nowrap;
     padding-left: clamp(25px, 5.5vw ,85px);
     padding-right: clamp(60px ,8.5vw, 175px);
     padding-block: clamp(20px ,5.85vh, 90px);
+
+    & .keySection__info-text {
+        white-space: pre-line;
+
+    }
 
     &:after {
         content: '';

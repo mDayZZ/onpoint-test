@@ -1,47 +1,27 @@
-# HTML5 Template + webpack + PostCSS (Boilerplate + Build tool)
-HTML5 template with CSS, JavaScript, images, and fonts support. The build tool is included (CSS and JS optimization support).
+Вот пример README файла на русском языке:
 
-## Prerequisites
+---
 
-- Node.js
-- npm
+# Тестовое задание для Onpoint
 
-## Installation
+## Описание
 
-```npm install```
+Это тестовое задание для компании Onpoint, основным критерием которого является адаптивная вёрстка под разрешение iPad mini (1024px на 768px).
 
-## Scripts
+## Структура проекта
 
-### Run project
+- **dist** — папка со скомпилированным кодом.
+- **src** — папка с исходным нескомпилированным кодом.
 
-``` npm run start ```
+## Запуск проекта
 
-### Build project
+Для запуска проекта достаточно открыть файл `index.html` в папке `dist` с помощью вашего браузера:
 
-``` npm run build ```
+1. Перейдите в папку `dist`.
+2. Дважды кликните на файл `index.html` или откройте его через меню вашего браузера.
 
-### Run build/production version
+Проект сразу будет доступен для просмотра и тестирования.
 
-Run index.html file (dist/index.html). 
-You can use the Live server to run index.html.
+## Совместимость
 
-## Configuration
-
-### npm 
-
-#### JavaScript entry point
-
-Edit package.json file.
-
-Change the entry point here.
-
-``` "main": "src/js/script.js",```
-
-### webpack
-#### Output directory
-
-Edit webpack.config.js file.
-
-Change the output directory here.
-
-```path: path.resolve(__dirname, "dist"),```
+Проект протестирован для разрешения iPad mini (1024px на 768px).

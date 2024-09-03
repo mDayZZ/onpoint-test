@@ -29,7 +29,6 @@ body * {
 
 
 .section {
-    outline: 1px solid red;
     flex-shrink: 0;
     width: 100vw;
     height: 100vh;
@@ -38,7 +37,6 @@ body * {
 .section-title {
     font-family: var(--font-family-base);
     font-weight: 400px;
-    /*font-size: 54px;*/
     font-size: clamp(16px, 2.64vw, 54px);
 }
 
@@ -55,7 +53,6 @@ body * {
 
 
 .container {
-    outline: 2px solid yellow;
     height: 100vh;
     margin-left: 140px;
     margin-right: 90px;
