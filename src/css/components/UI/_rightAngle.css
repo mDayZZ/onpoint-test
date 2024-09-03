@@ -1,0 +1,30 @@
+.rightAngle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    aspect-ratio: 1;
+    transform: rotate(45deg);
+
+    &--left {
+        transform: rotate(-45deg) translate(-50%, -50%);
+    }
+
+    &--right {
+        transform: rotate(135deg) translate(-50%, +50%);
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: clamp(2px, 0.24vw, 5px);
+        background-color: #000;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        height: clamp(2px, 0.24vw, 5px);
+        width: 100%;
+        background-color: #000;
+    }
+}

@@ -1,5 +1,10 @@
 .keySection {
-    background-color: #ddf8f5;
+    background:
+        /*url('/src/images/hero_background_layer.png') no-repeat,*/
+            radial-gradient(circle at 0px 25%, var(--color-pink-light) 0.5%, transparent 15%) no-repeat,
+            radial-gradient(circle at 20% 0px, var(--color-blue-light) 10%, transparent 45%) no-repeat,
+            radial-gradient(circle at bottom right, white 10%, transparent 30%) no-repeat;
+    background-color: #e2ecef;
 
     overflow: hidden;
     &__container {
@@ -17,7 +22,7 @@
 
     &__img-bottle {
         position: relative;
-        z-index: 10;
+        z-index: 100;
         width: clamp(140px, 22vw, 471px);
         height: auto;
 
@@ -25,8 +30,9 @@
 
     &__img-bubble {
         position: absolute;
-        z-index: 1;
+        z-index: 10;
         transform-origin: -10px -10px;
+        aspect-ratio: 1;
 
     }
 
@@ -128,38 +134,44 @@
     right: 15%;
     transform: translate(-50%, 0%);
     animation: rotate-right 60s ease-in-out infinite;
+    width: clamp(11px, 3.7vw, 76px);
 
 }
 #img-bubble-2 {
-    z-index: 100;
+    z-index: 1000;
     top: 10%;
     right: 15%;
     animation: rotate-left 90s ease-in-out infinite;
+    width: clamp(20px, 6.7vw, 138px);
 }
 #img-bubble-3 {
     top: 20%;
     left: 10%;
     animation: rotate-left 70s ease-in-out infinite;
+    width: clamp(40px, 3.3vw, 68px);
 
 }
 #img-bubble-4 {
     top: 30%;
     left: 65%;
     animation: rotate-left 80s ease-in-out infinite;
+    width: clamp(66px, 11vw, 225px);
 }
 
 #img-bubble-5 {
     top: 50%;
     right: 100%;
     animation: rotate-left 75s ease-in-out infinite;
+    width: clamp(20px, 3.2vw, 66px);
 
 }
 #img-bubble-6 {
-    z-index: 100;
+    z-index: 1000;
     bottom: 20%;
     right: 100%;
     transform: translate(50%, 50%);
     animation: rotate-right 55s ease-in-out infinite;
+    width: clamp(44px, 7.3vw, 150px);
 }
 
 #img-bubble-7 {
@@ -167,13 +179,15 @@
     right: 0;
     transform: translate(100%, 50%);
     animation: rotate-right 60s ease-in-out infinite;
+    width: clamp(36px, 6.05vw, 124px);
 }
 
 #img-bubble-8 {
-    z-index: 100;
+    z-index: 1000;
     bottom: 0;
     right: 0;
     transform: translate(50%, 50%);
     animation: rotate-right 55s ease-in-out infinite;
+    width: clamp(84px, 13.8vw, 284px);
 }
 

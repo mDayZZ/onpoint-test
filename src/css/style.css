@@ -6,6 +6,9 @@
 
 @import "./components/UI/_verticalSeparator.css";
 @import "./components/UI/_button.css";
+@import "./components/UI/_cross.css";
+@import "./components/UI/_rightAngle.css";
+@import "./components/UI/_pageButton.css";
 
 
 @import "./components/_header.css";

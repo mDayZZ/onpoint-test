@@ -51,3 +51,28 @@
     }
 }
 
+
+@keyframes hideItem {
+    from {
+        opacity: 100;
+        transform: translateX(0);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+}
+
+@keyframes showItem {
+    from {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+
+    to {
+        opacity: 100;
+        transform: translateX(0);
+    }
+}

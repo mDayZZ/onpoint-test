@@ -24,14 +24,12 @@ body * {
 .content {
     display: flex;
     overflow: auto;
-    /*min-width: 100vw;*/
     scroll-behavior: smooth;
 }
 
 
 .section {
     outline: 1px solid red;
-    /*background-color: #1f88cb;*/
     flex-shrink: 0;
     width: 100vw;
     height: 100vh;
@@ -48,9 +46,7 @@ body * {
     font-family: var(--font-family-accent);
     font-weight: 400;
     line-height: 1.07;
-    /*font-size: 220px;*/
     font-size: clamp(65px, 10.7vw, 220px);
-    /*font-size: 10.5vw;*/
 
     &--accent {
         font-weight: 800;
@@ -67,4 +63,106 @@ body * {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.73);
+
+    &__space {
+        width: 280px;
+    }
+
+    &__container {
+        position: relative;
+        min-width: 200px;
+        min-height: 150px;
+        background-color: #fff;
+        border-radius: 35px;
+        padding-inline: 50px;
+        padding-top: 50px;
+        margin-right: 50px;
+    }
+
+    &__closeButton {
+        position: absolute;
+        margin: 50px;
+        top: 0;
+        right: 0;
+        border: none;
+        background-color: transparent;
+        &-cross {
+            width: 90px;
+            aspect-ratio: 1;
+        }
+    }
+
+    &__content {
+        padding-left: 100px;
+    }
+
+    &__list-container {
+        min-height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    &__item {
+        &-title {
+            font-family: 'Gilroy';
+            font-weight: 800;
+            color: #8cc9e8;
+            font-size: clamp(15px, 2.44vw, 50px);
+        }
+
+        &-description {
+            font-family: 'DINPro';
+            font-size: clamp(15px, 2.44vw, 50px);
+        }
+    }
+
+    &__item.hide {
+        animation: hideItem 1s ease-in-out;
+    }
+
+    &__item.show {
+        animation: showItem 1s ease-in-out;
+    }
+
+    &__button-container {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        gap: 10px;
+        margin: 20px;
+    }
+
+    &__pagesButtons {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    &__pageSwitch {
+        position: relative;
+        border: none;
+        background-color: transparent;
+        font-weight: 800;
+        width: 20px;
+    }
+
+}
+
+.hidden {
+    display: none;
 }

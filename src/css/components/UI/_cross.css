@@ -1,0 +1,22 @@
+.cross {
+    position: relative;
+    width: clamp(26px, 4.4vw, 90px);
+    aspect-ratio: 1;
+    transform: rotate(45deg);
+    &:before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: clamp(2px, 0.24vw, 5px);
+        background-color: #000;
+        transform: translate(-50%, -50%);
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        height: clamp(2px, 0.24vw, 5px);
+        width: 100%;
+        background-color: #000;
+        transform: translate(-50%, -50%);
+    }
+}

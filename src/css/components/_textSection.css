@@ -21,16 +21,14 @@
     background-size: contain;
     background-position: top right;
     animation: opacitySlide 5s ease-in-out;
-    /*animation-delay: 0.5s;*/
 }
 
 .textSection {
     position: relative;
     overflow: hidden;
     background:
-            /*url('/src/images/hero_background_layer.png') no-repeat,*/
             radial-gradient(circle at top left, white 10%, transparent 25%) no-repeat,
-            radial-gradient(circle at bottom left, var(--color-blue-light) 10%, transparent 25%) no-repeat,
+            radial-gradient(circle at bottom left, var(--color-blue-light) 5%, transparent 25%) no-repeat,
             radial-gradient(circle at top right, var(--color-blue-light) 0.1%, var(--color-pink-light) 10%, #ecf2f4 30%) no-repeat;
     background-color: white;
     max-height: 100vh;
@@ -46,7 +44,6 @@
         display: flex;
         gap: 70px;
         margin-top: 48px;
-        /*margin-top: clamp(20px, 4.68vw, 96px);*/
         &-scrollBar {
             position: relative;
             width: 6px;
@@ -96,12 +93,11 @@
         &-block {
             overflow: scroll;
             max-width: 1550px;
-            /*max-height: calc(100vh - 150px - 140px);*/
             max-height: calc(100vh - 400px);
 
             padding-left: 60px;
             padding-right: 90px;
-            padding-block: 64px;
+            padding-block: clamp(20px ,4.1vh, 64px);
         }
 
         &-text {

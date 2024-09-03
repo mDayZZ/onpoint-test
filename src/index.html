@@ -18,6 +18,71 @@
   </div>
 </header>
 <main class="content">
+  <div class="modal hidden" id="detailsModal">
+    <div class="modal__space">
+
+    </div>
+    <div class="modal__container">
+      <button class="modal__closeButton" id="closeModalButton">
+        <div class="cross"></div>
+      </button>
+      <div class="modal__content">
+        <p class="modal__title section-title">ПРЕИМУЩЕСТВА</p>
+        <span class="modal__brandTitle large-text">BREND</span>
+        <span class="modal__brandTitle modal__brandTitle--accent large-text large-text--accent">XY</span>
+        <div class="modal__list-container">
+          <div class="modal__list-wrapper">
+            <ul class="modal__list">
+              <li class="modal__item">
+                <h3 class="modal__item-title">01</h3>
+                <p class="modal__item-description">Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit
+                </p>
+              </li>
+              <li class="modal__item">
+                <h3 class="modal__item-title">02</h3>
+                <p class="modal__item-description">Faucibus pulvinar elementum integer enim
+                </p>
+              </li>
+              <li class="modal__item">
+
+
+                <h3 class="modal__item-title">03</h3>
+                <p class="modal__item-description">Faucibus pulvinar elementum integer enim</p>
+              </li>
+              <li class="modal__item hidden">
+                <h3 class="modal__item-title">04</h3>
+                <p class="modal__item-description">Mi bibendum neque egestas congue quisque
+                  egestas diam</p>
+              </li>
+              <li class="modal__item hidden">
+                <h3 class="modal__item-title">05</h3>
+                <p class="modal__item-description">Venenatis lectus magna fringilla urna</p>
+              </li>
+              <li class="modal__item hidden">
+                <h3 class="modal__item-title">06</h3>
+                <p class="modal__item-description">Venenatis lectus magna fringilla urna</p>
+              </li>
+            </ul>
+          </div>
+          <div class="modal__button-container">
+            <button class="modal__pageSwitch" id="prevPage">
+              <div class="rightAngle rightAngle--left"></div>
+            </button>
+            <div class="modal__pagesButtons">
+              <button id="pageButton_1" class="pageButton pageButton--active"></button>
+              <button id="pageButton_2" class="pageButton"></button>
+            </div>
+            <button class="modal__pageSwitch" id="nextPage">
+              <div class="rightAngle rightAngle--right"></div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+  </div>
   <section class="section" id="hero">
 
     <div class="hero">
@@ -125,11 +190,11 @@
                     cursus vitae
                   </p>
                 </div>
-                <button class="keySection__info-button button">
+                <button id="detailsButton" class="keySection__info-button button">
                   <div class="button__round">
                     <span>+</span>
                   </div>
-                  <span class="button__text">Подробнее</span>
+                  <span class="button__text" >Подробнее</span>
                 </button>
               </div>
             </div>

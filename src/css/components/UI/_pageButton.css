@@ -1,0 +1,12 @@
+.pageButton {
+    border: 1px solid black;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: transparent;
+
+    &--active {
+        border: 1px solid var(--color-pink-light);
+        background-color: var(--color-pink-light);
+
+    }
+}
